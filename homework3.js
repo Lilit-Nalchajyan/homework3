@@ -60,4 +60,46 @@ const num = function(x,y) {
   console.log(divide(6,2));
   //result is 3;
 
+  //8.
+  const triangleArea = function(base, height){
+    return divide(multiply(base, height), 2);
+  };
+  console.log(triangleArea(3,6));
+  //result is 9
+
+  //9.
+  const numLength = function(a){
+    const str = a + "";
+    return str.length;
+  };
+  console.log(numLength(457685875));
+  //result is 9
+  
+  //10.
+  const n = function(num1, num2, num3){
+    if (num1.length + num2.length > num3) {
+      return 1;
+    }
+    else{
+      return -1;
+    }
+  };
+  console.log(n("Good", "Morning", 13));
+  //returns -1
+  
+  //11.
+  const runStuff = function(x, y, z){
+    if (x === "rectangle") {
+      return multiply(y,z);
+    }
+    else if (x === "triangle") {
+      return triangleArea(y, z);
+    }
+    else {
+      return -1;
+    }
+  };
+  console.log(runStuff("circle", 5, 6));
+  //returns -1
+
   
